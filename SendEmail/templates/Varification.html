@@ -1,0 +1,7 @@
+<h1>please verify otp this is home page</h1>
+<form action="verifyotp" method="post">
+    {% csrf_token %}
+    <input type="hidden" name="ootp" value="{{otp}}" /><br>
+    <input type="number" name="notp" /></br>
+    <input type="submit" value="verify otp" />
+</form>
